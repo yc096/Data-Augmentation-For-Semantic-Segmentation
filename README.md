@@ -1,5 +1,5 @@
 # Data-Augmentation
-主要包括了一些简单的数据增强手段
+仓库主要包括了一些简单的数据增强手段
 
 ### 依赖
 #### opencv 4.0.1
@@ -15,7 +15,8 @@
 #### 5.更改对比度  [adjust_contrast.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/adjust_contrast.py)
 #### 6.按尺度缩放 [scale.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/scale.py)
 #### 7.高斯模糊 [gaussianblur.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/gaussianblur.py)
-#### 8.标准化 [normalize.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/normalize.py)
+#### 8.标准化/反标准化 [normalize.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/normalize.py)
+#### 9.旋转   [rotate.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/rotate.py)
 
 ## Demo
 ### 1.裁剪
@@ -32,5 +33,7 @@
 ![adjust_brightness](images/scale.jpg)
 ### 7.高斯模糊 原图 k=3 k=7 k=11
 ![gaussianblur](images/gaussianblur.jpg)
-### 8.标准化
+### 8.标准化/反标准化
 ![normalize](images/normalize.jpg)
+### 9.旋转 60°
+![rotate](images/rotate.jpg)

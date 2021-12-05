@@ -32,5 +32,5 @@
 ![adjust_brightness](images/scale.jpg)
 ### 7.高斯模糊 原图 k=3 k=7 k=11
 ![gaussianblur](images/gaussianblur.jpg)
-### 7.标准化
+### 8.标准化
 ![normalize](images/normalize.jpg)

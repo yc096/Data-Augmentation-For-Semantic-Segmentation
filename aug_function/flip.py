@@ -1,5 +1,5 @@
 import cv2
-def filp(img, mode=1):
+def flip(img, mode=1):
     """
     翻转一副图像
     :param img:符合Opencv读入格式,颜色通道为RGB,unit8类型.

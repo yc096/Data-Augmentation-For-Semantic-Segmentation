@@ -1,11 +1,13 @@
 import cv2
 import time
-from code.crop import crop
-from code.adjust_brightness import adjust_brightness
-from code.filp import filp
-from code.adjust_saturation import adjust_saturation
-from code.adjust_contrast import adjust_contrast
-
+from aug_function.crop import crop
+from aug_function.adjust_brightness import adjust_brightness
+from aug_function.flip import flip
+from aug_function.adjust_saturation import adjust_saturation
+from aug_function.adjust_contrast import adjust_contrast
+from aug_function.scale import scale
+from aug_function.gaussianblur import gaussianblur
+from aug_function.normalize import normalize
 def imgShow(IMAGE, WINDOW_NAME=None):
     """
     显示一副图像,该图像符合opencv格式,且颜色通道为RGB.
@@ -29,11 +31,11 @@ def imgShow(IMAGE, WINDOW_NAME=None):
 image = cv2.imread(r'C:\WorkSpace\Data-Augmentation\images\image.jpg')
 label = cv2.imread(r'C:\WorkSpace\Data-Augmentation\images\label.jpg')
 
-imgShow(image)
+imgShow(image,'original')
 # imgShow(label)
 
-imgShow(adjust_saturation(image,0))
-# imgShow(adjust_saturation(label,1))
+imgShow(normalize(image))
+# imgShow(normalize(label))
 
 
 cv2.waitKey(10000000)

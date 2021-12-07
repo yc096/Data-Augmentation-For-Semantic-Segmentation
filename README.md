@@ -17,6 +17,7 @@
 #### 7.高斯模糊 [gaussianblur.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/gaussianblur.py)
 #### 8.标准化/反标准化 [normalize.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/normalize.py)
 #### 9.旋转   [rotate.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/rotate.py)
+#### 10.复制-粘贴   [copy_paste.py]((https://github.com/yc096/Data-Augmentation/blob/main/aug_function/copy_paste.py))    21-12-07代码未优化      &emsp;&emsp;&emsp; from this [paper](https://arxiv.org/pdf/2012.07177.pdf) 
 
 ## Demo
 ### 1.裁剪
@@ -37,3 +38,5 @@
 ![normalize](images/normalize.jpg)
 ### 9.旋转 60°
 ![rotate](images/rotate.jpg)
+### 10.复制-粘贴
+![rotate](images/copy_paste.jpg)

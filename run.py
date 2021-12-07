@@ -12,6 +12,7 @@ from aug_function.scale import scale
 from aug_function.gaussianblur import gaussianblur
 from aug_function.normalize import normalize,unnormalize
 from aug_function.rotate import rotate
+from aug_function.copy_paste import copy_paste
 def imgShow(IMAGE, WINDOW_NAME=None):
     """
     显示一副图像,该图像符合opencv格式,且颜色通道为RGB.
@@ -37,15 +38,15 @@ image = cv2.cvtColor(image,cv2.COLOR_BGR2RGB)
 label = cv2.imread(r'C:\WorkSpace\Data-Augmentation\images\label.jpg',0)
 _,label = cv2.threshold(label,127,255,cv2.THRESH_BINARY)
 
-#debug
-# imgShow(image,'original_image')
-# imgShow(label,'original_label')
-#
-# image = rotate(image,-60)
-# label = rotate(label,-60,0)
-#
-# imgShow(image,'rotate_image')
-# imgShow(label,'rotate_label')
+image2 = cv2.imread(r'C:\WorkSpace\Data-Augmentation\images\image2.jpg',1)
+image2 = cv2.cvtColor(image2,cv2.COLOR_BGR2RGB)
+label2 = cv2.imread(r'C:\WorkSpace\Data-Augmentation\images\label2.jpg',0)
+_,label2 = cv2.threshold(label2,127,255,cv2.THRESH_BINARY)
+
+
+img,label = copy_paste(image,label,image2,label2)
+imgShow(img)
+imgShow(label)
 
 
 cv2.waitKey(10000000)

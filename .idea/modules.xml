@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Data-Augmentation.iml" filepath="$PROJECT_DIR$/.idea/Data-Augmentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Data-Augmentation-For-Semantic-Segmentation.iml" filepath="$PROJECT_DIR$/.idea/Data-Augmentation-For-Semantic-Segmentation.iml" />
     </modules>
   </component>
 </project>

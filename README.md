@@ -8,16 +8,16 @@
 
 
 ## 已实现
-#### 1.裁剪   [crop.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/crop.py)
-#### 2.翻转   [flip.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/flip.py)
-#### 3.更改亮度   [adjust_brightness.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/adjust_brightness.py)
-#### 4.更改饱和度  [adjust_saturation.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/adjust_saturation.py)
-#### 5.更改对比度  [adjust_contrast.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/adjust_contrast.py)
-#### 6.按尺度缩放 [scale.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/scale.py)
-#### 7.高斯模糊 [gaussianblur.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/gaussianblur.py)
-#### 8.标准化/反标准化 [normalize.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/normalize.py)
-#### 9.旋转   [rotate.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/rotate.py)
-#### 10.复制-粘贴   [copy_paste.py](https://github.com/yc096/Data-Augmentation/blob/main/aug_function/copy_paste.py)    21-12-07代码未优化      &emsp;&emsp;&emsp; from this [paper](https://arxiv.org/pdf/2012.07177.pdf) 
+#### 1.裁剪   [crop.py](https://github.com/yc096/Data-Augmentation-For-Semantic-Segmentation/blob/main/aug_function/crop.py)
+#### 2.翻转   [flip.py](https://github.com/yc096/Data-Augmentation-For-Semantic-Segmentation/blob/main/aug_function/flip.py)
+#### 3.更改亮度   [adjust_brightness.py](https://github.com/yc096/Data-Augmentation-For-Semantic-Segmentation/blob/main/aug_function/adjust_brightness.py)
+#### 4.更改饱和度  [adjust_saturation.py](https://github.com/yc096/Data-Augmentation-For-Semantic-Segmentation/blob/main/aug_function/adjust_saturation.py)
+#### 5.更改对比度  [adjust_contrast.py](https://github.com/yc096/Data-Augmentation-For-Semantic-Segmentation/blob/main/aug_function/adjust_contrast.py)
+#### 6.按尺度缩放 [scale.py](https://github.com/yc096/Data-Augmentation-For-Semantic-Segmentation/blob/main/aug_function/scale.py)
+#### 7.高斯模糊 [gaussianblur.py](https://github.com/yc096/Data-Augmentation-For-Semantic-Segmentation/blob/main/aug_function/gaussianblur.py)
+#### 8.标准化/反标准化 [normalize.py](https://github.com/yc096/Data-Augmentation-For-Semantic-Segmentation/blob/main/aug_function/normalize.py)
+#### 9.旋转   [rotate.py](https://github.com/yc096/Data-Augmentation-For-Semantic-Segmentation/blob/main/aug_function/rotate.py)
+#### 10.复制-粘贴   [copy_paste.py](https://github.com/yc096/Data-Augmentation-For-Semantic-Segmentation/blob/main/aug_function/copy_paste.py)    21-12-07代码未优化      &emsp;&emsp;&emsp; from this [paper](https://arxiv.org/pdf/2012.07177.pdf) 
 
 ## Demo
 ### 1.裁剪

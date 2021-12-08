@@ -47,6 +47,8 @@ _,label2 = cv2.threshold(label2,127,255,cv2.THRESH_BINARY)
 img,label = copy_paste(image,label,image2,label2)
 imgShow(img)
 imgShow(label)
+while True:
+    cv2.waitKey(10000)
 
 
 cv2.waitKey(10000000)

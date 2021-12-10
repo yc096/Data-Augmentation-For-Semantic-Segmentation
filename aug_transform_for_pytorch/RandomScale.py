@@ -1,15 +1,16 @@
 import random
-from aug_function.resize import resize  #为了保持与其他函数的一致性
+from aug_function.scale import scale
 class RandomScale(object):
-    def __init__(self,scales=(1,)):
+    def __init__(self,scales=(1,),p=0.5):
         self.scales = scales
+        self.p = p
 
     def __call__(self, img_mask):
+        if random.random() > self.p:
+            return img_mask
         img = img_mask[0]
         mask = img_mask[1]
-        H,W = img.shape[:2]
-        scale = random.choice(self.scales)
-        H,W = int(H*scale),int(W*scale)
-        img = resize(img,H,W,1)
-        mask = resize(mask,H,W,0)
+        random_scale = random.choice(self.scales)
+        img = scale(img,random_scale,1)
+        mask = scale(mask,random_scale,0)
         return (img,mask)

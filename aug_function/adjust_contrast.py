@@ -1,5 +1,11 @@
 import cv2
 import numpy as np
+
+
+def is_gray_img(img: np.ndarray):
+    return (len(img.shape) == 2) or (len(img.shape) == 3 and img.shape[-1] == 1)
+
+
 def adjust_contrast(img, factor):
     """
     调整一幅图像的对比度,label不做变换.
@@ -16,6 +22,3 @@ def adjust_contrast(img, factor):
     lut = np.clip(lut, 0, 255).astype(img.dtype)
     img = cv2.LUT(img, lut)
     return img
-
-def is_gray_img(img: np.ndarray):
-    return (len(img.shape) == 2) or (len(img.shape) == 3 and img.shape[-1] == 1)

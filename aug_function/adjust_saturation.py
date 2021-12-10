@@ -1,5 +1,9 @@
 import cv2
 import numpy as np
+
+def is_gray_img(img: np.ndarray):
+    return (len(img.shape) == 2) or (len(img.shape) == 3 and img.shape[-1] == 1)
+
 def adjust_saturation(img, factor, gamma=0):
     """
     调整一幅图像的饱和度,label不做变换.
@@ -23,5 +27,3 @@ def adjust_saturation(img, factor, gamma=0):
     result = np.clip(result, 0, 255).astype(img.dtype)
     return result
 
-def is_gray_img(img: np.ndarray):
-    return (len(img.shape) == 2) or (len(img.shape) == 3 and img.shape[-1] == 1)

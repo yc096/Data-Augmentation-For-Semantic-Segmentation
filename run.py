@@ -33,23 +33,24 @@ def imgShow(IMAGE, WINDOW_NAME=None):
         cv2.imshow(WINDOW_NAME,cv2.cvtColor(IMAGE,cv2.COLOR_RGB2BGR))
 
 
-image = cv2.imread(r'C:\WorkSpace\Data-Augmentation\images\image.jpg',1)
+image = cv2.imread(r'C:\WorkSpace\Data-Augmentation-For-Semantic-Segmentation\images\image.jpg',1)
 image = cv2.cvtColor(image,cv2.COLOR_BGR2RGB)
-label = cv2.imread(r'C:\WorkSpace\Data-Augmentation\images\label.jpg',0)
+label = cv2.imread(r'C:\WorkSpace\Data-Augmentation-For-Semantic-Segmentation\images\label.jpg',0)
 _,label = cv2.threshold(label,127,255,cv2.THRESH_BINARY)
 
-image2 = cv2.imread(r'C:\WorkSpace\Data-Augmentation\images\image2.jpg',1)
+image2 = cv2.imread(r'C:\WorkSpace\Data-Augmentation-For-Semantic-Segmentation\images\image2.jpg',1)
 image2 = cv2.cvtColor(image2,cv2.COLOR_BGR2RGB)
-label2 = cv2.imread(r'C:\WorkSpace\Data-Augmentation\images\label2.jpg',0)
+label2 = cv2.imread(r'C:\WorkSpace\Data-Augmentation-For-Semantic-Segmentation\images\label2.jpg',0)
 _,label2 = cv2.threshold(label2,127,255,cv2.THRESH_BINARY)
 
-
-img,label = copy_paste(image,label,image2,label2)
+imgShow(image)
+imgShow(label)
+img = scale(image,1.25,1)
+label = scale(label,1.25,0)
 imgShow(img)
 imgShow(label)
 while True:
-    cv2.waitKey(10000)
-
+    cv2.waitKey(100000)
 
 cv2.waitKey(10000000)
 

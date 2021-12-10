@@ -30,7 +30,7 @@
 ![adjust_brightness](images/adjust_saturation.jpg)
 ### 5.调增对比度 x1.5
 ![adjust_brightness](images/adjust_contrast.jpg)
-### 6.按尺度缩放 x0.85
+### 6.按尺度缩放 x0.65 x1.25
 ![adjust_brightness](images/scale.jpg)
 ### 7.高斯模糊 原图 k=3 k=7 k=11
 ![gaussianblur](images/gaussianblur.jpg)

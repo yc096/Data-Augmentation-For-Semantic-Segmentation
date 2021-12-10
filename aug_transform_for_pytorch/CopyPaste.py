@@ -13,7 +13,9 @@ class CopyPaste(object):
         img2 = img_mask2[0]
         mask2 = img_mask2[1]
 
-        return copy_paste(img1,mask1,img2,mask2)
+        img , mask  = copy_paste(img1,mask1,img2,mask2)
+
+        return (img,mask)
 
 
 

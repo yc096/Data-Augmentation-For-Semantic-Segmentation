@@ -11,6 +11,5 @@ class RandomScale(object):
         img = img_mask[0]
         mask = img_mask[1]
         random_scale = random.choice(self.scales)
-        img = scale(img,random_scale,1)
-        mask = scale(mask,random_scale,0)
+        img,mask = scale(img,mask,random_scale,)
         return (img,mask)

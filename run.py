@@ -45,9 +45,8 @@ _,label2 = cv2.threshold(label2,127,255,cv2.THRESH_BINARY)
 
 imgShow(image)
 imgShow(label)
-img = scale(image,1.25,1)
-label = scale(label,1.25,0)
-imgShow(img)
+image,label = scale(image,label,1.45)
+imgShow(image)
 imgShow(label)
 while True:
     cv2.waitKey(100000)

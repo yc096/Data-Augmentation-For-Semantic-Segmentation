@@ -10,7 +10,7 @@ class ColorJitter(object):
         self.saturation = random.uniform(max(0, 1 - saturation), 1 + saturation)
     def __call__(self,img_mask):
         img = img_mask[0]
-        # mask not transform
+        # mask do't transform
         img = adjust_brightness(img,self.brightness)
         img = adjust_contrast(img,self.contrast)
         img = adjust_saturation(img,self.saturation)

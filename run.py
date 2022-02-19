@@ -53,3 +53,14 @@ while True:
 
 cv2.waitKey(10000000)
 
+# Debug
+# import cv2
+# img = cv2.imread(r'C:\WorkSpace\Data-Augmentation-For-Semantic-Segmentation\images\image.jpg',1)
+# mask = cv2.imread(r'C:\WorkSpace\Data-Augmentation-For-Semantic-Segmentation\images\label.jpg',0)
+# cv2.imshow('1',img)
+# cv2.imshow('2',mask)
+#
+# img , mask = RandomScale(scales=(0.5,0.75,1,1.25,1.5))((img,mask))
+# cv2.imshow('3',img)
+# cv2.imshow('4',mask)
+# cv2.waitKey(0)
